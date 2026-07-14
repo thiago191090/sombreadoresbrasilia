@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombreadores Brasília</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <!-- Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Vinculando o arquivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Menu Superior Claro -->
+    <div class="top-bar-light">
+        <ul class="menu-links">
+            <li><a href="#">Home</a></li>
+        </ul>
+        <div class="logo-placeholder"><img src="images/logo.png" alt="Serviço 1"></div>
+    </div>
+
+    <!-- Barra Escura com WhatsApp -->
+    <div class="top-bar-dark">
+        <span>Entre em contato e faça já o seu orçamento!</span>
+        <span class="wpp-contact"><i class="fa-brands fa-whatsapp"></i> (61) 98143-4486</span>
+    </div>
+
+    <!-- Slide com zoom -->
+    <div class="hero-slider">
+        <div class="slide-bg"></div>
+        <div class="hero-content">
+            <h3>SOLICITE A VISITA DE UM REPRESENTANTE</h3>
+            <h1>SOMBREADORES DE QUALIDADE</h1>
+            <h2>COBRIMOS QUALQUER ORÇAMENTO!</h2>
+        </div>
+    </div>
+
+    <!-- Barra de Chamada para Ação -->
+    <div class="call-to-action-bar">
+        <div class="cta-text">
+            <h3>Faça o seu orçamento agora mesmo!</h3>
+            <p>Áreas externas como: condomínios, estacionamentos, residências e muito mais.</p>
+        </div>
+        <button class="btn-orcamento" onclick="document.getElementById('orcamentoForm').scrollIntoView({behavior: 'smooth'})">Solicitar Orçamento</button>
+    </div>
+
+    <!-- Seção de Formulário e Contato -->
+    <div class="contact-section">
+        <form id="orcamentoForm" class="form-container">
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Nome *</label>
+                    <input type="text" required>
+                </div>
+                <div class="input-group">
+                    <label>Sobrenome</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="input-group" style="margin-bottom: 15px;">
+                <label>Email *</label>
+                <input type="email" required>
+            </div>
+            <div class="input-group">
+                <label>Escreva sua mensagem *</label>
+                <textarea rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar orçamento</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Outros contatos:</h3>
+            <p>Telefone Matriz:<br>(61) 98143-4486</p>
+            
+            <strong>ATENDIMENTO:</strong>
+            <p>De segunda a sexta de 08:00 às 18:00hrs<br>Sábado das 08:00 às 14:00hrs</p>
+            
+            <strong>E-MAIL DE CONTATO:</strong>
+            <p>contato@sombreadoresbrasilia.com</p>
+        </div>
+    </div>
+
+    <!-- Efeito Carrossel Infinito -->
+    <div class="carousel-section">
+        <div class="carousel-track">
+            <!-- Fotos Originais -->
+            <div class="carousel-item"><img src="images/sombreador9.png" alt="Foto 1"></div>
+            <div class="carousel-item"><img src="images/sombreador10.png" alt="Foto 2"></div>
+            <div class="carousel-item"><img src="images/sombreador11.png" alt="Foto 3"></div>
+            <!-- Clones das fotos para o efeito infinito não quebrar -->
+            <div class="carousel-item"><img src="images/sombreador12.png" alt="Foto 1"></div>
+            <div class="carousel-item"><img src="images/sombreador13.png" alt="Foto 2"></div>
+            <div class="carousel-item"><img src="images/sombreador14.png" alt="Foto 3"></div>
+        </div>
+    </div>
+
+    <!-- SEÇÃO SOBRE A PRODUÇÃO E QUALIDADE (NOVA) -->
+    <section class="about-production-section">
+        <div class="production-container">
+            <i class="fa-solid fa-shield-halved production-icon"></i>
+            <div class="production-text-block">
+                <p>A nossa produção de Toldos, Coberturas e Sombrites possui estrutura em perfis tubulares de aço, são protegidos à corrosão e possuem design moderno.</p>
+                
+                <p>Dentre as vantagens, podemos citar a facilidade e rapidez na montagem. Nossos produtos permitem a remoção, expansão, possuem alta durabilidade, adaptação e integração com projetos já existentes.</p>
+                
+                <p>Nossas telas são produzidas em polietileno de alta densidade que bloqueia até 95% dos raios UV. São produzidas em cores modernas, não degradantes, tensionada com cabos de aços revestidos, possuem também flexibilidade e são resistentes a granizo e pequenos impactos.</p>
+                
+                <p class="highlight-text">Também realizamos a <strong>costura em sombreadores</strong> já instalados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vantagens Linha 1 -->
+    <div class="advantages-row bg-mid-blue">
+        <div class="advantage-item">
+            <i class="fa-regular fa-circle-check"></i>
+            <h4>EXCELENTE ACABAMENTO</h4>
+            <p>Seguimos os mais rígidos controles de qualidade em nossa produção.</p>
+        </div>
+        <div class="advantage-item">
+            <i class="fa-regular fa-circle-check"></i>
+            <h4>RECUPERAÇÃO DE SOMBREADOR</h4>
+            <p>Você não precisa comprar um novo, nós recuperamos o seu usado.</p>
+        </div>
+        <div class="advantage-item">
+            <i class="fa-regular fa-circle-check"></i>
+            <h4>AMPLA VARIEDADE</h4>
+            <p>Temos vários modelos, cores, materiais para a melhor qualidade do seu sombreador.</p>
+        </div>
+    </div>
+
+    <!-- Vantagens Linha 2 -->
+    <div class="advantages-row bg-light-blue">
+        <div class="advantage-item">
+            <i class="fa-regular fa-circle-check"></i>
+            <h4>DESIGN MODERNO</h4>
+            <p>Modernos padrões de engenharia e arquitetura, o que propõe um produto diferente da concorrência.</p>
+        </div>
+        <div class="advantage-item">
+            <i class="fa-regular fa-circle-check"></i>
+            <h4>BAIXO CUSTO</h4>
+            <p>Temos o melhor custo benefício de toda a região de Brasília.</p>
+        </div>
+        <div class="advantage-item">
+            <i class="fa-regular fa-circle-check"></i>
+            <h4>RÁPIDA INSTALAÇÃO</h4>
+            <p>Nossa equipe está preparada para entregar o seu produto com qualidade o mais rápido possível.</p>
+        </div>
+    </div>
+
+    <!-- NOVA SEÇÃO DE SERVIÇOS MODERNIZADA -->
+    <div class="services-section">
+        <div class="services-header">
+            <h2>Conheça os nossos principais serviços:</h2>
+            <p>Utilizamos os melhores equipamentos, acessórios e recursos disponíveis no mercado. Sombreadores, toldos e coberturas.</p>
+        </div>
+        
+        <div class="modern-services-grid">
+            <div class="service-card">
+                <i class="fa-solid fa-car"></i>
+                <span>Carros</span>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-building"></i>
+                <span>Condomínios</span>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-warehouse"></i>
+                <span>Garagens</span>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-paw"></i>
+                <span>Sombrites p/ animais</span>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-square-parking"></i>
+                <span>Estacionamentos</span>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-house"></i>
+                <span>Residências</span>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-tree"></i>
+                <span>Áreas externas</span>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-tractor"></i>
+                <span>Zona Rural</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Galeria de Fotos Grid -->
+    <div class="main-gallery-section">
+        <h2>Confira nossos últimos serviços entregues</h2>
+        <div class="gallery-grid">
+            <img src="images/sombreador1.png" alt="Serviço 1">
+            <img src="images/sombreador2.png" alt="Serviço 2">
+            <img src="images/sombreador3.png" alt="Serviço 3">
+            <img src="images/sombreador4.png" alt="Serviço 4">
+            <img src="images/sombreador5.png" alt="Serviço 5">
+            <img src="images/sombreador6.png" alt="Serviço 6">
+            <img src="images/sombreador7.png" alt="Serviço 7">
+            <img src="images/sombreador8.png" alt="Serviço 8">
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Sombreadores Brasília. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Vinculando o arquivo JavaScript no final do Body -->
+    <script src="script.js"></script>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5561981434486" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Fale conosco pelo WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+</html>
